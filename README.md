@@ -7,6 +7,22 @@ Customer listing Api: https://www.mockaroo.com/virtual_services/26584
 
 Customer Address(s) Api: https://www.mockaroo.com/virtual_services/26582
 
+### Architecture
+
+This is a typescript based React application. It has below two main components apart from App component:
+
+#### CustomerListing
+
+This component takes care of dispaying the customer data in HTML table with styling on it. It also dispatch and action with payload containing selected customer's id when any row in the table is being clicked. Then the customer's id being passed down to CustomerDetails component as part of it;s properties.
+
+### CustomerDetails
+
+This component gets the customer's id in it's properties, using it the component fetches customer address from the api discussed above for customer Address data. Once it recieves the data its shows in a list in the UI. A customer can have many number of addresse(s) or no address. For convinience the Api can return max three addres(s) for customer, however that can be increased at API level. This component is capable of handling any number of addresses.
+
+#### CustomerStore
+
+This module exports a reducer function which handles the action triggered by row-click event described in CustomerListing component. It returns a state conatining selected customer's id. App component uses this reducer using `useReducer` hook to get the state and dispatch function. It also exports a context which is being used to pass down the dispatch function to child component of App such as CustomerListing.
+
 
 ## Available Scripts
 
@@ -24,11 +40,12 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 
-### 'npm test -- --coverage'
+### `npm test -- --coverage`
 
 Launches the test runner with code coverage
+Currently we have 
 
-### 'npm run lint'
+### `npm run lint`
 
 List down any linting warning or error in the project.
 
