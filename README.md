@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Features
-When the application opens in browser it loads llist of customers fetched through API calls. It lists own the customer's id, name, age and gender in a table. Once the table is displayed any row can be clicked to show the address(s) avialable for the customer. The address(s) are being fetched from another API call.
+When the application opens in browser it loads llist of customers fetched through API calls. It lists down the customer's id, name, age and gender in a table. Once the table is displayed any row can be clicked to show the address(s) avialable for the customer. The address(s) are being fetched from another API call.
 
 Customer listing Api: https://www.mockaroo.com/virtual_services/26584
 Customer Address(s) Api: https://www.mockaroo.com/virtual_services/26582
