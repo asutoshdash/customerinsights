@@ -7,6 +7,8 @@ Customer listing Api: https://www.mockaroo.com/virtual_services/26584
 
 Customer Address(s) Api: https://www.mockaroo.com/virtual_services/26582
 
+*Above mocks are hosted in Mockaroo portal, they have a limit of 200 requests per 24Hrs, if you donot see data then the limit might have exhausted. Try next dayin UST time.*
+
 ### Architecture
 
 This is a typescript based React application. It has below two main components apart from App component:
