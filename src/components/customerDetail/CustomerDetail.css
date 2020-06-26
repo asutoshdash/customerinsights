@@ -1,0 +1,9 @@
+.cl_addresslist{
+    list-style: none;
+    height: calc(100vh - 200px);
+}
+.cl_addresslist li{
+    border: 1px solid orange;
+    margin-top: 10px;
+    padding:5px;
+}

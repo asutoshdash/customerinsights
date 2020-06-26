@@ -2,8 +2,11 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+/**
+ * Checks whether the app renders with a header or not.
+ */
+test('renders customer insights app', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText("Customer Insights");
   expect(linkElement).toBeInTheDocument();
 });
